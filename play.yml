@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  become: true
+
+  roles:
+    - role: etcd
+    - role: sql
+    - role: ntp
+    - role: messageq
+    - role: memcached
+    - role: openstack_pack
+
+
